@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+
+    <!-- Incluimos el "partial" del head -->
+    <%- include ('partials/head.html')%>
+</head>
+<body>
+
+    <!-- Incluimos el "partial" de la navegacion -->
+    <%- include ('partials/navigation.html')%>
+
+    <!-- Incluimos la imagen -->
+    <!-- Ponemos la imagen dentro de un "container" para que se centre el contenido -->
+    <div class="container">
+      <header class="row">
+        <div class="col-lg-12 text-center">
+          <img src="/img/pews-logo.png" alt="Pew's Logo">
+        </div>
+      </header>
+    </div>
+
+    <!-- Creamos la sección 1 -->
+    <div class="container-fluid" id='about'>
+      <!-- Creo una fila con fondo oscuro, texto blanco, centrado y con un padding de 5 -->
+      <div class="row bg-dark text-white p-5 text-center">
+        <!-- Dividimos la seccion en columnas, la primera tiene el icono de Youtube -->
+        <!-- Con fa-10x agrandamos 10 veces el tamaño del icono -->
+        <div class="col-sm-6">
+          <i class="fab fa-youtube fa-10x"></i>
+        </div>
+        <!-- La segunda columna va a tener un texto "Lorem" -->
+        <div class="col-sm-6">
+          <h3>
+            The most suscribed Youtuber
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse aliquid, cumque quo saepe deserunt quos pariatur natus totam doloribus! Tempore eligendi ut perferendis aliquam unde odio illo minus sint nostrum.
+            </p>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Incluimos el "partial" del footer -->
+    <%- include ('partials/footer.html')%>
+
+    <!-- Incluimos el "partial" de los scripts -->
+    <%- include ('partials/scripts.html')%>
+    
+</body>
+</html>

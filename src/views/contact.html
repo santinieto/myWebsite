@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+
+    <!-- Incluimos el "partial" del head -->
+    <%- include ('partials/head.html')%>
+</head>
+<body>
+
+    <!-- Incluimos el "partial" de la navegacion -->
+    <%- include ('partials/navigation.html')%>
+    
+    <!-- Si es una pagina de contacto tendria sentido que sea un formulario -->
+    <div class="container-fluid p-5">
+        <div class="row">
+            <!-- Ocupa 4 columnas -->
+            <div class="col-md-4 offset-md-4">
+                <!-- El formulario esta dentro de una tarjeta -->
+                <div class="card animate__animated animate__bounceIn">
+                    <!-- Creamos el encabezado -->
+                    <div class="card-header bg-dark text-white text-center">
+                        <h3>
+                            Contact Me
+                        </h3>
+                    </div>
+                    <!-- Creamos el cuerpo -->
+                    <div class="card-body">
+                        <form action="">
+                            <div class="mb-3 form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="mb-3 form-group">
+                                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <div class="mb-3 form-group d-grid gap-2">
+                                <button class="btn btn-primary">
+                                    Send message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluimos el "partial" del footer -->
+    <%- include ('partials/footer.html')%>
+
+    <!-- Incluimos el "partial" de los scripts -->
+    <%- include ('partials/scripts.html')%>
+    
+</body>
+</html>
